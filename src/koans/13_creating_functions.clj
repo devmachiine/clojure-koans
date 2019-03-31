@@ -26,6 +26,9 @@
   (= 25 (let [inc-and-square (comp square inc)]
           (inc-and-square 4)))
 
+  "without let -> Functions can join forces as one 'composed' function"
+  (= 25 ((comp square inc) 4))
+
   "Have a go on a double dec-er"
   (= 8 (let [double-dec (comp dec dec)]
           (double-dec 10)))
