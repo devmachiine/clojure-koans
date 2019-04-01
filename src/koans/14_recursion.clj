@@ -58,5 +58,6 @@
   "You can even deal with very large numbers"
   (< 1000000000000000000000000N (factorial 1000N))
 
-  "But what happens when the machine limits you?"
-  (< 1000000000000000000000000N (factorial 100003N)))
+  ;"But what happens when the machine limits you?"
+  ;(< 1000000000000000000000000N (factorial 100003N))
+  )
